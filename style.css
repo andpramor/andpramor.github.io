@@ -1,0 +1,48 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: lightseagreen;
+    overflow: hidden;
+}
+
+.linea {
+    display: inline;
+    font-size: 100px;
+    font-weight: bolder;
+    animation: textito 5s linear infinite;
+    color: white;
+}
+
+.linea2 {
+    display: inline;
+    font-size: 100px;
+    font-weight: bolder;
+    animation: textito 3s linear infinite;
+    color: white;
+}
+
+.linea3 {
+    display: inline;
+    font-size: 100px;
+    font-weight: bolder;
+    animation: textito 7s linear infinite;
+    color: white;
+}
+
+.animado {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    margin-top: 100px;
+    white-space: nowrap;
+}
+
+@keyframes textito {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-100% - 20px));
+    }
+}
