@@ -1,15 +1,21 @@
 .body {
     background-color: #306bac;
+    height: 100vh;
 }
 
 .myBtn {
-    background-color: #306bac !important;
-    color: white !important;
-    border: solid 1px lightseagreen !important;
     height: 6em;
+    background-color: #1d1d1f !important;
     font-weight: bold !important;
 }
 
 .myBtn:hover {
-    background-color: lightseagreen !important;
+    background-color: #306bac !important;
+    background-color: #1d1d1f !important;
+    border: 1px solid lightskyblue !important;
+    color: lightskyblue !important;
+}
+
+.textoBlanco {
+    color: #fbfbfb !important;
 }
