@@ -9,7 +9,7 @@ function esDispositivoMovil() {
 function deshabilitarBotonEnDispositivoMovil() {
     var boton = document.getElementById("btnNoMobile");
     if (esDispositivoMovil()) {
-        boton.disabled = true;
+        boton.href = "#";
     }
 }
 
