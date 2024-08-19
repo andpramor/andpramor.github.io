@@ -33,7 +33,7 @@ body {
     gap: 1rem;
     width: 100%;
     min-height: 100dvh;
-    margin: 0;
+    margin: 0 auto;
     padding: 1rem;
     background-color: hsla(0, 0%, 100%, 1);
     background-image: radial-gradient(
@@ -47,6 +47,21 @@ body {
             transparent 63.69587993071477%
         );
     background-blend-mode: multiply, multiply;
+}
+
+nav {
+    align-self: end;
+    padding: 0.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--deep-blue);
+    opacity: 0.8;
+}
+
+nav a:hover {
+    opacity: 1;
 }
 
 .text-yellow {
@@ -127,7 +142,7 @@ section {
 }
 
 @media screen and (min-width: 768px) {
-    section {
+    body {
         width: 80%;
     }
 
@@ -137,7 +152,7 @@ section {
 }
 
 @media screen and (min-width: 1200px) {
-    section {
+    body {
         width: 60%;
     }
 }
