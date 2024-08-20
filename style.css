@@ -160,6 +160,7 @@ section {
     color: white;
     text-decoration: none;
     transition: all 0.3s;
+    text-align: center;
 }
 
 .project:hover {
