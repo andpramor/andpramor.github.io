@@ -5,8 +5,28 @@
     margin: 0;
     padding: 0;
     color: white;
-    --yellow: #e1ce7a;
     --deep-blue: #002d3c;
+    --react-blue: #61dbfb;
+    --yellow: #e1ce7a;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--deep-blue);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--yellow);
+    border-radius: 4px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    body {
+        scrollbar-color: var(--yellow) var(--deep-blue);
+    }
 }
 
 * {
@@ -35,18 +55,7 @@ body {
     min-height: 100dvh;
     margin: 0 auto;
     padding: 1rem;
-    background-color: hsla(0, 0%, 100%, 1);
-    background-image: radial-gradient(
-            circle at 34% 47%,
-            hsla(14.000000000000004, 100%, 64%, 0.33) 17.647148063137625%,
-            transparent 61.5109675345299%
-        ),
-        radial-gradient(
-            circle at 74% 17%,
-            hsla(247.99999999999997, 100%, 63%, 0.3) 11.26645584295136%,
-            transparent 63.69587993071477%
-        );
-    background-blend-mode: multiply, multiply;
+    background-color: var(--deep-blue);
 }
 
 nav {
@@ -56,12 +65,15 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: var(--deep-blue);
     opacity: 0.8;
 }
 
 nav a:hover {
     opacity: 1;
+}
+
+.text-lightBlue {
+    color: var(--react-blue);
 }
 
 .text-yellow {
@@ -76,15 +88,58 @@ nav a:hover {
     margin-top: 0.5rem;
 }
 
+.bg-grad {
+    background-color: hsla(224, 70%, 17%, 1);
+    background-image: radial-gradient(
+            circle at 91% 91%,
+            hsla(276, 72%, 4%, 0.46) 10%,
+            transparent 57%
+        ),
+        radial-gradient(
+            circle at 90% 84%,
+            hsla(197, 57%, 0%, 1) 17%,
+            transparent 81%
+        ),
+        radial-gradient(
+            circle at 63% 76%,
+            hsla(274, 90%, 2%, 1) 4%,
+            transparent 63%
+        ),
+        radial-gradient(
+            circle at 64% 25%,
+            hsla(271, 68%, 19%, 1) 10%,
+            transparent 66%
+        ),
+        radial-gradient(
+            circle at 82% 4%,
+            hsla(269, 82%, 4%, 1) 12%,
+            transparent 73%
+        ),
+        radial-gradient(
+            circle at 75% 55%,
+            hsla(222, 85%, 21%, 1) 13%,
+            transparent 84%
+        ),
+        radial-gradient(
+            circle at 50% 4%,
+            hsla(218, 79%, 9%, 1) 17%,
+            transparent 60%
+        ),
+        radial-gradient(
+            circle at 13% 9%,
+            hsla(276, 74%, 4%, 1) 10%,
+            transparent 57%
+        );
+    background-blend-mode: normal, normal, normal, normal, normal, normal,
+        normal, normal;
+}
+
 section {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     width: 100%;
     padding: 1rem;
-    border-radius: 8px;
-    background-color: #222;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
 }
 
 .aboutSection--intro {
@@ -115,7 +170,7 @@ section {
 
 .project {
     width: 100%;
-    aspect-ratio: 2 / 3;
+    aspect-ratio: 3 / 2;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -124,13 +179,12 @@ section {
     padding: 1rem;
     border-radius: 8px;
     color: white;
-    background-color: var(--deep-blue);
     text-decoration: none;
     transition: all 0.3s;
 }
 
 .project:hover {
-    box-shadow: 0 0 10px gray;
+    box-shadow: 0 0 10px white;
     font-size: 1.1rem;
 }
 
