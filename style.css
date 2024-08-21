@@ -196,6 +196,7 @@ footer {
     padding-top: 1rem;
     text-align: center;
     color: var(--gray);
+    font-size: 0.9rem;
 }
 
 @media screen and (min-width: 768px) {
