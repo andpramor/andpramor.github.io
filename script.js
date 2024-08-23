@@ -1,3 +1,5 @@
+// SUN: <i class="bi bi-brightness-high"></i> MOON: <i class="bi bi-moon-fill"></i>
+
 const handleLightToggler = () => {
     // Check the current theme, set the new theme to be the other option, update it in :root (document.documentElement) and store it in localStorage:
     const currentTheme = document.documentElement.getAttribute('color-mode')
@@ -7,11 +9,11 @@ const handleLightToggler = () => {
 
     // Change the icon:
     if (newTheme === 'dark') {
-        lightToggler.classList.add('fa-regular')
-        lightToggler.classList.remove('fa-solid')
+        lightToggler.classList.add('bi-brightness-high-fill')
+        lightToggler.classList.remove('bi-moon-fill')
     } else {
-        lightToggler.classList.add('fa-solid')
-        lightToggler.classList.remove('fa-regular')
+        lightToggler.classList.add('bi-moon-fill')
+        lightToggler.classList.remove('bi-brightness-high-fill')
     }
 }
 
@@ -30,11 +32,11 @@ function loadTheme() {
     document.documentElement.setAttribute("color-mode", theme);
 
     if (theme === "dark") {
-        lightToggler.classList.remove('fa-solid');
-        lightToggler.classList.add('fa-regular');
+        lightToggler.classList.remove('bi-moon-fill');
+        lightToggler.classList.add('bi-brightness-high-fill');
     } else {
-        lightToggler.classList.remove('fa-regular');
-        lightToggler.classList.add('fa-solid');
+        lightToggler.classList.remove('bi-brightness-high-fill');
+        lightToggler.classList.add('bi-moon-fill');
     }
 }
 
