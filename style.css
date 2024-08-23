@@ -84,6 +84,7 @@ nav {
     border-radius: 500px;
     position: fixed;
     top: 1rem;
+    z-index: 9999;
     box-shadow: none;
     transition: top 0.3s, background-color 0.3s, box-shadow 0.3s;
 }
