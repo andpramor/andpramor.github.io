@@ -9,38 +9,132 @@
     </head>
 
     <body>
-        <nav class="text-gray">
+        <nav id="optionsMenu" class="text-gray">
             <a href="./en/">English</a>
             <i id="lightModeToggler" class="bi bi-brightness-high-fill"></i>
         </nav>
-        <section class="aboutSection">
+        <section class="intro">
             <header class="aboutSection--intro">
                 <img
                     src="./assets/profilePic.webp"
                     alt="Foto de perfil de Andrés Prado Morgaz"
                 />
                 <div>
-                    <p>
-                        <em>¡Hola! Soy Andrés Prado Morgaz</em>
-                    </p>
+                    <h1>¡Hola! Soy Andrés Prado Morgaz</h1>
                     <p class="mt-1 text-gray">
                         desarrollador web
                         <span class="text-highlight">Fullstack</span>
+                        con React, Typescript y Django
                     </p>
                 </div>
             </header>
             <p>
+                Soy desarrollador en Eviden, con un enfoque especialmente
+                dirigido al Frontend, ¡pero hago de todo! Puedes encontrarme en
+                <a
+                    href="mailto:andres@andrespradomorgaz.com"
+                    class="text-highlight"
+                    >andres@andrespradomorgaz.com</a
+                >
+                y en
+                <a
+                    href="https://www.linkedin.com/in/apradomorgaz/"
+                    class="text-highlight"
+                    >LinkedIn</a
+                >.
+            </p>
+        </section>
+        <section class="projectsSection">
+            <h3>Explora algunos de mis proyectos en vivo</h3>
+            <div class="projectsList">
+                <article class="project">
+                    <div class="img-container">
+                        <img
+                            src="./assets/thumbTVLogger.webp"
+                            alt="TVLogger thumbnail"
+                        />
+                    </div>
+                    <div class="project-details">
+                        <h3>TVLogger</h3>
+                        <div class="techList">
+                            <span class="techItem">React</span>
+                        </div>
+                        Lleva un registro de las películas y series de TV que
+                        has visto. No vuelvas a perder la cuenta de qué capítulo
+                        te toca ahora.
+                        <div class="project-links">
+                            <a
+                                href="https://andrespradomorgaz.com/tv-react-tracker"
+                                ><i class="bi bi-link-45deg"></i
+                                ><span>Proyecto</span></a
+                            >
+                        </div>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="img-container">
+                        <img
+                            src="./assets/thumbBootstrap.webp"
+                            alt="Bootstrap project thumbnail"
+                        />
+                    </div>
+                    <div class="project-details">
+                        <h3>Plantilla de portfolio</h3>
+                        <div class="techList">
+                            <span class="techItem">Bootstrap 5</span>
+                        </div>
+                        Una plantilla para desarrolladores y diseñadores, con
+                        apartados para proyectos, experiencia y educación,
+                        utilizando Bootstrap 5 para el display responsive y
+                        algunos estilos.
+                        <div class="project-links">
+                            <a
+                                href="https://andrespradomorgaz.com/Portfolio-Bootstrap"
+                                ><i class="bi bi-link-45deg"></i
+                                ><span>Proyecto</span></a
+                            >
+                        </div>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="img-container">
+                        <img
+                            src="./assets/thumbTictactoe.webp"
+                            alt="TicTacToe thumbnail"
+                        />
+                    </div>
+                    <div class="project-details">
+                        <h3>Tres en raya</h3>
+                        <div class="techList">
+                            <span class="techItem">React</span>
+                        </div>
+                        El clásico juego tres en raya, explorando useEffect y
+                        useState con React.
+                        <div class="project-links">
+                            <a href="https://andrespradomorgaz.com/tic-tac-toe"
+                                ><i class="bi bi-link-45deg"></i
+                                ><span>Proyecto</span></a
+                            >
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="aboutSection">
+            <h3>Sobre mí</h3>
+            <p>
                 En 2024, terminé con
                 <span class="text-highlight">Matrícula de Honor</span> el Grado
                 Superior en Desarrollo de Aplicaciones Web, en el IES Hermanos
-                Machado. Hice mis prácticas en Eviden, del Grupo Atos, y tras
-                esa enriquecedora experiencia, pasé a formar parte de su
-                plantilla como Desarrollador de Aplicaciones, puesto que ocupo
+                Machado. Durante mis prácticas en Eviden, del Grupo Atos,
+                adquirí una valiosa experiencia que me llevó a formar parte de
+                su equipo como Desarrollador de Aplicaciones, rol que desempeño
                 actualmente.
             </p>
             <p>
-                Tengo buenos conocimientos de ReactJS y Angular, y estoy muy
-                cómodo con HTML, CSS, Javascript y Typescript.
+                Mi enfoque principal es el frontend, donde estoy muy cómodo
+                trabajando con ReactJS y Angular, y tengo sólidos conocimientos
+                en HTML, CSS, Javascript y Typescript.
             </p>
             <p class="logos">
                 <img src="./assets/svg/react.svg" alt="React logo" />
@@ -51,8 +145,10 @@
                 <img src="./assets/svg/typescript.svg" alt="Typescript logo" />
             </p>
             <p>
-                En cuanto al backend, utilizo Python con Django y DRF sobre
-                todo, pero también me manejo con Java y Spring Boot.
+                En backend, he desarrollado principalmente con Python,
+                utilizando el framework web Django y DRF para desarrollar mis
+                APIs REST, y también tengo experiencia utilizando Java y Spring
+                Boot.
             </p>
             <p class="logos">
                 <img src="./assets/svg/python.svg" alt="Python logo" />
@@ -60,37 +156,6 @@
                 <img src="./assets/svg/java.svg" alt="Java logo" />
                 <img src="./assets/svg/spring-boot.svg" alt="SpringBoot logo" />
             </p>
-        </section>
-        <section class="projectsSection">
-            <h3>Algunos de mis proyectos</h3>
-            <div class="projectsList">
-                <a
-                    class="project bg-grad"
-                    href="https://andpramor.github.io/tv-react-tracker"
-                >
-                    <span>Sigue tus</span>
-                    <span>series y películas</span>
-                    <span>con <span class="text-yellow">React</span> </span>
-                </a>
-                <a
-                    class="project bg-grad"
-                    href="https://andpramor.github.io/Portfolio-Bootstrap"
-                >
-                    <span>Plantilla de portfolio</span>
-                    <span>
-                        con <span class="text-yellow">Bootstrap 5</span>
-                    </span>
-                </a>
-                <a
-                    class="project bg-grad"
-                    href="https://andpramor.github.io/tic-tac-toe"
-                >
-                    Tres en raya
-                    <span>con <span class="text-yellow">React</span> </span>
-                </a>
-                <a class="project bg-grad">Placeholder lista de tareas</a>
-                <a class="project bg-grad">Placeholder conecta cuatro</a>
-            </div>
         </section>
         <section class="contactSection">
             <h3>Contacto</h3>
@@ -109,9 +174,7 @@
                 >.
             </p>
         </section>
-        <footer>
-            Andrés Prado Morgaz &#169; Todos los derechos reservados
-        </footer>
+        <footer>&#169; 2024. Andrés Prado Morgaz</footer>
         <script src="./script.js"></script>
     </body>
 </html>

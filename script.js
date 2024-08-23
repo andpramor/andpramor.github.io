@@ -1,5 +1,3 @@
-// SUN: <i class="bi bi-brightness-high"></i> MOON: <i class="bi bi-moon-fill"></i>
-
 const handleLightToggler = () => {
     // Check the current theme, set the new theme to be the other option, update it in :root (document.documentElement) and store it in localStorage:
     const currentTheme = document.documentElement.getAttribute('color-mode')
@@ -44,3 +42,25 @@ const lightToggler = document.getElementById('lightModeToggler')
 lightToggler.addEventListener('click', handleLightToggler)
 
 loadTheme()
+
+let lastScrollTop = 0;
+const optionsMenu = document.getElementById('optionsMenu');
+
+window.addEventListener('scroll', function () {
+    let scrollTop = document.documentElement.scrollTop;
+
+    if (scrollTop > 0) {
+        optionsMenu.classList.add('bg-blur')
+    } else {
+        optionsMenu.classList.remove('bg-blur')
+    }
+
+    if (scrollTop > lastScrollTop) {
+        // Downwards scroll: hides menu
+        optionsMenu.style.top = '-3rem'
+    } else {
+        // Upwards scroll: shows menu
+        optionsMenu.style.top = '1rem'
+    }
+    lastScrollTop = scrollTop;
+});
