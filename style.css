@@ -7,18 +7,20 @@
     --deep-blue: #002d3c;
     --react-blue: #61dbfb;
     /* Light mode: */
-    --yellow: #ffd000;
     --gray: rgb(113, 117, 122);
-    --body-bg: #f0f0f0;
-    --body-color: var(--deep-blue);
+    --body-bg: #f8f8ff;
+    --body-color: black;
+    --highlight-color: #007acc;
+    --project-shadow: var(--gray);
 }
 
 /* Dark mode */
 [color-mode='dark'] {
     --body-bg: var(--deep-blue);
     --body-color: white;
-    --yellow: #e1ce7a;
     --gray: rgb(209, 213, 219);
+    --highlight-color: #ffd000;
+    --project-shadow: white;
 }
 
 body::-webkit-scrollbar {
@@ -99,11 +101,15 @@ nav i:hover {
 }
 
 .text-yellow {
-    color: var(--yellow);
+    color: #ffd000;
 }
 
 .text-gray {
     color: var(--gray);
+}
+
+.text-highlight {
+    color: var(--highlight-color);
 }
 
 .mt-1 {
@@ -186,7 +192,7 @@ section {
 }
 
 .project:hover {
-    box-shadow: 0 0 10px white;
+    box-shadow: 0 0 10px var(--project-shadow);
     font-size: 1.1rem;
 }
 
