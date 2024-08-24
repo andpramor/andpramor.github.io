@@ -9,26 +9,130 @@
     </head>
 
     <body>
-        <nav class="text-gray">
+        <aside id="optionsMenu" class="text-gray">
             <a href="../">Español</a>
             <i id="lightModeToggler" class="bi bi-brightness-high-fill"></i>
-        </nav>
-        <section class="aboutSection">
-            <header class="aboutSection--intro">
+        </aside>
+        <section class="intro">
+            <header class="intro">
                 <img
                     src="../assets/profilePic.webp"
                     alt="Andrés Prado Morgaz profile picture"
                 />
                 <div>
-                    <p>
-                        <em>Hi! I'm Andrés Prado Morgaz</em>
-                    </p>
+                    <h1>Hi! I'm Andrés Prado Morgaz</h1>
                     <p class="mt-1 text-gray">
                         a <span class="text-highlight">Fullstack</span> Web
                         Developer with React, Typescript and Django
                     </p>
                 </div>
             </header>
+            <p>
+                I'm a webdev at Eviden, focusing on Frontend now, but I work on
+                everything! You can find me at
+                <a
+                    href="mailto:andres@andrespradomorgaz.com"
+                    class="text-highlight"
+                    >andres@andrespradomorgaz.com</a
+                >
+                and on
+                <a
+                    href="https://www.linkedin.com/in/apradomorgaz/"
+                    class="text-highlight"
+                    >LinkedIn</a
+                >.
+            </p>
+        </section>
+        <section class="projectsSection">
+            <h3>Check some of my live projects</h3>
+            <div class="projectsList">
+                <article class="project">
+                    <div class="img-container">
+                        <img
+                            src="../assets/thumbTVLogger.webp"
+                            alt="TVLogger thumbnail"
+                        />
+                    </div>
+                    <div class="project-details">
+                        <h3>TVLogger</h3>
+                        <div class="techList">
+                            <span class="techItem">React</span>
+                        </div>
+                        Keep a log of every movie and TV show you watch. Never
+                        lose track of the next episode to watch!
+                        <div class="project-links">
+                            <a
+                                href="https://andrespradomorgaz.com/tv-react-tracker"
+                                ><i class="bi bi-link-45deg"></i
+                                ><span>Live project</span></a
+                            >
+                            <a
+                                href="https://github.com/andpramor/tv-react-tracker"
+                                ><i class="bi bi-github"></i
+                                ><span>Code</span></a
+                            >
+                        </div>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="img-container">
+                        <img
+                            src="../assets/thumbBootstrap.webp"
+                            alt="Bootstrap project thumbnail"
+                        />
+                    </div>
+                    <div class="project-details">
+                        <h3>Mockup portfolio</h3>
+                        <div class="techList">
+                            <span class="techItem">Bootstrap 5</span>
+                        </div>
+                        A mockup for developers and designers, with sections for
+                        projects, experience and education, using Bootstrap 5
+                        for responsive display and some styles.
+                        <div class="project-links">
+                            <a
+                                href="https://andrespradomorgaz.com/Portfolio-Bootstrap"
+                                ><i class="bi bi-link-45deg"></i
+                                ><span>Live project</span></a
+                            >
+                            <a
+                                href="https://github.com/andpramor/Portfolio-Bootstrap"
+                                ><i class="bi bi-github"></i
+                                ><span>Code</span></a
+                            >
+                        </div>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="img-container">
+                        <img
+                            src="../assets/thumbTictactoe.webp"
+                            alt="TicTacToe thumbnail"
+                        />
+                    </div>
+                    <div class="project-details">
+                        <h3>Tic Tac Toe</h3>
+                        <div class="techList">
+                            <span class="techItem">React</span>
+                        </div>
+                        The classic Tic Tac Toe game, exploring React's hooks:
+                        useEffect and useState.
+                        <div class="project-links">
+                            <a href="https://andrespradomorgaz.com/tic-tac-toe"
+                                ><i class="bi bi-link-45deg"></i
+                                ><span>Live project</span></a
+                            >
+                            <a href="https://github.com/andpramor/tic-tac-toe"
+                                ><i class="bi bi-github"></i
+                                ><span>Code</span></a
+                            >
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="aboutSection">
+            <h3>About me</h3>
             <p>
                 In 2024, I completed my Certificate of Higher Education in Web
                 Development,
@@ -39,7 +143,7 @@
                 hold.
             </p>
             <p>
-                My primary focus now is Frontend development, where I'm very
+                My primary focus now is on Frontend development, where I'm very
                 confortable with ReactJS and Angular. I consider myself
                 proficent with HTML, CSS and vanilla Javascript and Typescript
                 too.
@@ -67,36 +171,6 @@
                 />
             </p>
         </section>
-        <section class="projectsSection">
-            <h3>Check some of my live projects</h3>
-            <div class="projectsList">
-                <a
-                    class="project bg-grad"
-                    href="https://andrespradomorgaz.com/tv-react-tracker"
-                >
-                    <span>TVLogger</span>
-                    <span>with <span class="text-yellow">React</span></span>
-                </a>
-                <a
-                    class="project bg-grad"
-                    href="https://andrespradomorgaz.com/Portfolio-Bootstrap"
-                >
-                    <span>Mockup portfolio</span>
-                    <span
-                        >with <span class="text-yellow">Bootstrap 5</span></span
-                    >
-                </a>
-                <a
-                    class="project bg-grad"
-                    href="https://andrespradomorgaz.com/tic-tac-toe"
-                >
-                    Tic Tac Toe
-                    <span>with <span class="text-yellow">React</span> </span>
-                </a>
-                <a class="project bg-grad">Placeholder to-do list</a>
-                <a class="project bg-grad">Placeholder conect four</a>
-            </div>
-        </section>
         <section class="contactSection">
             <h3>Contact</h3>
             <p>
@@ -113,7 +187,7 @@
                 >.
             </p>
         </section>
-        <footer>Andrés Prado Morgaz &#169; All rights reserved</footer>
+        <footer>&#169; 2024. Andrés Prado Morgaz</footer>
         <script src="../script.js"></script>
     </body>
 </html>
