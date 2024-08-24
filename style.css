@@ -217,6 +217,7 @@ section {
     width: 100%;
     aspect-ratio: 3 / 2;
     border-radius: 16px;
+    border: 1px solid var(--highlight-color);
     overflow: hidden;
     position: relative;
     img {
