@@ -193,7 +193,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .project {
@@ -321,8 +321,16 @@ footer {
         }
     }
 
+    .projectsList {
+        gap: 3rem;
+    }
+
     .project {
         flex-direction: row;
+    }
+
+    .project:nth-child(even) {
+        flex-direction: row-reverse;
     }
 
     .project .img-container {
