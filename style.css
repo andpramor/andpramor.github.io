@@ -13,7 +13,7 @@
     --body-bg: #f8f8ff;
     --body-color: black;
     --highlight-color: #007acc;
-    --shadow-color: var(--gray);
+    --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
 /* Dark mode */
@@ -22,7 +22,7 @@
     --body-color: white;
     --gray: rgb(209, 213, 219);
     --highlight-color: #ffd000;
-    --shadow-color: white;
+    --shadow-color: rgba(255, 255, 255, 0.1);
 }
 
 body::-webkit-scrollbar {
@@ -85,15 +85,16 @@ body {
     position: fixed;
     top: 1rem;
     z-index: 9999;
-    box-shadow: none;
     transition: top 0.3s, background-color 0.3s, box-shadow 0.3s;
 }
 
 .bg-blur {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    box-shadow: 0 0 2px var(--shadow-color);
     background-color: rgba(0, 0, 0, 0.1);
+
+    -webkit-box-shadow: 2px 2px 8px var(--shadow-color);
+    box-shadow: 2px 2px 8px var(--shadow-color);
 }
 
 #optionsMenu i {
