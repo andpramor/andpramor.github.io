@@ -296,7 +296,7 @@ footer {
         width: 80%;
     }
 
-    .aboutSection--intro {
+    .intro {
         flex-direction: row;
         div {
             text-align: start;
