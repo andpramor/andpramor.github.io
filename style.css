@@ -299,7 +299,8 @@ section {
     align-self: center;
 }
 
-.logos img {
+.logos img,
+.logos svg {
     height: 3.5rem;
     width: auto;
 }
