@@ -241,11 +241,19 @@ section {
 }
 
 .techItem {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
     border-radius: 500px;
     background-color: var(--react-blue);
     color: black;
     padding: 0.1rem 0.5rem;
     font-size: 0.85rem;
+}
+
+.svg {
+    width: 0.85rem;
+    height: 0.85rem;
 }
 
 .project-links {
