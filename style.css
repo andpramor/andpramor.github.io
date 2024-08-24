@@ -297,6 +297,10 @@ footer {
         width: 80%;
     }
 
+    .sectionIntro {
+        align-items: start;
+    }
+
     .intro {
         flex-direction: row;
         div {
