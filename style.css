@@ -90,6 +90,7 @@ nav {
 }
 
 .bg-blur {
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     box-shadow: 0 0 2px var(--shadow-color);
     background-color: rgba(0, 0, 0, 0.1);
@@ -212,14 +213,13 @@ section {
         top: 50%;
         left: 50%;
         object-fit: cover;
-        transform: translate(-50%, -50%) scale(1.02);
+        transform: translate(-50%, -50%) scale(1);
         filter: grayscale(50%);
         transition: transform 0.3s, filter 0.3s;
     }
 }
 
 .project:hover img {
-    transform: translate(-50%, -50%) scale(1);
     filter: none;
 }
 
@@ -242,18 +242,30 @@ section {
     font-size: 0.85rem;
 }
 
+.project-links {
+    display: flex;
+    gap: 0.5rem;
+}
+
 .project-links a {
+    display: flex;
+    gap: 0.5rem;
     text-decoration: none;
     color: inherit;
     border: 1px solid var(--gray);
     border-radius: 500px;
-    padding: 0.1rem 0.5rem;
-    transition: background-color 0.3s, border 0.3s;
+    padding: 0.2rem 0.5rem;
+    transition: border 0.3s;
+    i {
+        transition: color 0.3s;
+    }
 }
 
 .project-links a:hover {
-    background-color: #f8f8ff;
-    border: 2px solid var(--gray);
+    border: 1px solid var(--highlight-color);
+    i {
+        color: var(--highlight-color);
+    }
 }
 
 .logos {
@@ -298,6 +310,13 @@ footer {
     .project .img-container {
         flex: 0 0 auto;
         width: 50%;
+        img {
+            transform: translate(-50%, -50%) scale(1.02);
+        }
+    }
+
+    .project:hover img {
+        transform: translate(-50%, -50%) scale(1);
     }
 }
 
