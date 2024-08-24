@@ -75,7 +75,7 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-nav {
+#optionsMenu {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -96,19 +96,19 @@ nav {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-nav i {
+#optionsMenu i {
     font-size: 1.2rem;
 }
 
-nav a,
-nav i {
+#optionsMenu a,
+#optionsMenu i {
     text-decoration: none;
     opacity: 0.8;
     color: inherit;
 }
 
-nav a:hover,
-nav i:hover {
+#optionsMenu a:hover,
+#optionsMenu i:hover {
     opacity: 1;
     cursor: pointer;
 }
