@@ -166,6 +166,10 @@ section {
     padding: 1rem;
 }
 
+.sectionIntro {
+    margin-top: 1rem;
+}
+
 .sectionIntro,
 .intro {
     display: flex;
