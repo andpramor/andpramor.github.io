@@ -116,6 +116,11 @@ body {
     cursor: pointer;
 }
 
+.evidenLogo {
+    fill: #ff6d43;
+    height: 0.8rem;
+}
+
 .text-lightBlue {
     color: var(--react-blue);
 }
