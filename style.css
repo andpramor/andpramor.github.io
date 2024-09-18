@@ -15,6 +15,7 @@
   --highlight-color: #007acc;
   --over-highlight-color: white;
   --shadow-color: rgba(0, 0, 0, 0.1);
+  --highlight-contrast: black;
 }
 
 /* Dark mode */
@@ -25,6 +26,7 @@
   --highlight-color: #ffd000;
   --over-highlight-color: black;
   --shadow-color: rgba(255, 255, 255, 0.1);
+  --highlight-contrast: white;
 }
 
 body::-webkit-scrollbar {
@@ -203,6 +205,17 @@ section {
   gap: 2rem;
 }
 
+.seeMore {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.seeMore:active {
+  color: var(--highlight-contrast);
+}
+.projectsList > .seeMore {
+  align-self: flex-start;
+}
+
 .project {
   width: 100%;
   display: flex;
@@ -211,6 +224,10 @@ section {
   border-radius: 8px;
   text-decoration: none;
   transition: all 0.3s;
+}
+
+.hidden {
+  display: none;
 }
 
 .project .img-container-out {
