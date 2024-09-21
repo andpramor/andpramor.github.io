@@ -250,7 +250,6 @@ section {
       left: 50%;
       object-fit: cover;
       mask-image: linear-gradient(black 60%, transparent);
-      filter: grayscale(50%);
       transform: translate(-50%, -50%) scale(1);
       transition: transform 0.3s, filter 0.3s;
     }
@@ -261,10 +260,6 @@ section {
       left: 0.5rem;
     }
   }
-}
-
-.project:hover .img-container-out .img-container-in img {
-  filter: none;
 }
 
 .project-details {
