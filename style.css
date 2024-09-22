@@ -84,6 +84,7 @@ body {
   align-items: center;
   gap: 0.5rem;
   align-self: end;
+  margin-right: 1rem;
   padding: 0.5rem;
   border-radius: 500px;
   position: fixed;
@@ -105,17 +106,20 @@ body {
   font-size: 1.2rem;
 }
 
-#optionsMenu a,
-#optionsMenu i {
+#optionsMenu span {
+  cursor: pointer;
+}
+
+#optionsMenu span * {
   text-decoration: none;
   opacity: 0.8;
   color: inherit;
+  transition: opacity 0.3s, color 0.3s;
 }
 
-#optionsMenu a:hover,
-#optionsMenu i:hover {
+#optionsMenu span:hover * {
   opacity: 1;
-  cursor: pointer;
+  color: var(--highlight-color);
 }
 
 .evidenLogo {
@@ -411,7 +415,7 @@ footer {
     transform: translate(-50%, -50%) scale(1);
   }
 
-  .project-details .projectTitleMd {
+  .project-details .projectTitleMd:not(.hiddenLanguage) {
     display: block;
   }
 

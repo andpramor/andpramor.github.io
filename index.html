@@ -10,8 +10,18 @@
 
   <body>
     <aside id="optionsMenu" class="text-gray">
-      <a href="./en/">English</a>
-      <i id="lightModeToggler" class="bi bi-brightness-high-fill"></i>
+      <span id="languageToggler">
+        <i class="bi bi-translate"></i>
+        <span class="text">English</span>
+        <span class="text hiddenLanguage">Español</span>
+      </span>
+      <span id="lightModeToggler">
+        <i id="lightModeTogglerIcon" class="bi bi-brightness-high-fill"></i>
+        <span class="text showInLightMode">Modo oscuro</span>
+        <span class="text hiddenLanguage showInLightMode">Dark mode</span>
+        <span class="text showInDarkMode">Modo claro</span>
+        <span class="text hiddenLanguage showInDarkMode">Light mode</span>
+      </span>
     </aside>
     <section class="sectionIntro">
       <header class="intro">
@@ -20,15 +30,18 @@
           alt="Foto de perfil de Andrés Prado Morgaz"
         />
         <div>
-          <h1>¡Hola! Soy Andrés Prado Morgaz</h1>
+          <h1 class="text">¡Hola! Soy Andrés Prado Morgaz</h1>
+          <h1 class="text hiddenLanguage">Hi! I'm Andrés Prado Morgaz</h1>
           <p class="mt-1 text-gray">
-            desarrollador web
+            <span class="text">desarrollador web</span>
+            <span class="text hiddenLanguage">a</span>
             <span class="text-highlight">Fullstack</span>
-            con React, Typescript y Django
+            <span class="text hiddenLanguage">web developer with</span>
+            <span class="text">con</span> React, Typescript y Django
           </p>
         </div>
       </header>
-      <p>
+      <p class="text">
         Soy desarrollador en
         <svg
           class="evidenLogo"
@@ -56,9 +69,39 @@
           >mi CV</a
         >.
       </p>
+      <p class="text hiddenLanguage">
+        I'm a webdev at
+        <svg
+          class="evidenLogo"
+          version="1.1"
+          viewBox="0 0 538.29999 96.199997"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m 262.2,14.9 v 52.7 h 6.7 V 21.4 h 24.7 c 12.2,0 20.9,10.9 20.9,26.7 0,15.8 -8.7,26.7 -20.9,26.7 H 258 c -2.8,0 -4.7,-1.8 -4.7,-4.7 V 11.3 c 0,-2.8 1.8,-4.7 4.7,-4.7 h 35.6 c 21.3,0 36.7,17.4 36.7,41.5 0,24.1 -15.4,41.5 -36.7,41.5 h -47.2 v 6.5 h 47.2 c 24.1,0 43.8,-20.7 43.8,-48 0,-27.3 -19.6,-48 -43.8,-48 H 258 c -7.1,0 -11.5,4.7 -11.5,11.1 v 58.9 c 0,6.5 4.5,11.1 11.5,11.1 h 35.6 c 15.4,0 28,-14.2 28,-33.2 0,-19 -12.6,-33.2 -28,-33.2 H 262.2 Z M 71.8,52.2 H 11.5 C 4.4,52.2 0,56.9 0,63.3 V 85 c 0,6.5 4.5,11.1 11.5,11.1 h 64 c 2,0 3.4,-1.4 3.4,-3.4 V 78.3 c 0,-2 -1.4,-3.4 -3.4,-3.4 H 22.2 V 66 h -6.5 v 15.4 h 56.5 v 8.3 H 11.5 C 8.7,89.7 6.8,87.9 6.8,85 V 63.3 c 0,-2.8 1.8,-4.7 4.7,-4.7 h 63.6 c 2,0 3.4,-1.4 3.4,-3.4 V 40.8 c 0,-2 -1.4,-3.4 -3.4,-3.4 H 11.5 C 8.7,37.4 6.8,35.6 6.8,32.7 V 11.3 c 0,-2.8 1.8,-4.7 4.7,-4.7 h 61 v 8.3 H 15.7 v 15.2 h 6.5 v -8.7 h 53.3 c 2,0 3.4,-1.4 3.4,-3.4 V 3.8 c 0,-2 -1.4,-3.6 -3.4,-3.6 h -64 C 4.4,0.2 0,4.9 0,11.3 v 21.5 c 0,6.5 4.5,11.1 11.5,11.1 h 60.4 v 8.3 z M 172.3,6.6 h 9.9 L 149.2,89.8 115,3.4 C 114,1 112.6,0.2 109.9,0.2 H 93.3 c -2,0 -3.2,1.4 -3.2,3.2 0,0.6 0.2,1.4 0.4,2 l 35.6,90.7 h 8.3 L 98.8,6.6 h 9.7 l 34.4,86.7 c 1,2.4 2,2.8 4.5,2.8 h 3.6 c 2.4,0 3.4,-0.4 4.5,-2.8 L 190.3,5.4 c 0.2,-0.6 0.4,-1.4 0.4,-2 0,-1.8 -1.2,-3.2 -3.2,-3.2 H 171.1 C 168.5,0.2 167,1 166,3.4 l -21.1,54.3 3.8,9.3 z m 251.2,45.6 h -60.4 c -7.1,0 -11.5,4.7 -11.5,11.1 V 85 c 0,6.5 4.5,11.1 11.5,11.1 h 64 c 2,0 3.4,-1.4 3.4,-3.4 V 78.3 c 0,-2 -1.4,-3.4 -3.4,-3.4 H 373.8 V 66 h -6.5 v 15.4 h 56.5 v 8.3 H 363 c -2.8,0 -4.7,-1.8 -4.7,-4.7 V 63.3 c 0,-2.8 1.8,-4.7 4.7,-4.7 h 63.7 c 2,0 3.4,-1.4 3.4,-3.4 V 40.8 c 0,-2 -1.4,-3.4 -3.4,-3.4 h -63.6 c -2.8,0 -4.7,-1.8 -4.7,-4.7 V 11.3 c 0,-2.8 1.8,-4.7 4.7,-4.7 h 61 v 8.3 h -56.7 v 15.2 h 6.5 v -8.7 h 53.3 c 2,0 3.4,-1.4 3.4,-3.4 V 3.8 c 0,-2 -1.4,-3.6 -3.4,-3.6 h -64 c -7.1,0 -11.5,4.7 -11.5,11.1 v 21.5 c 0,6.5 4.5,11.1 11.5,11.1 h 60.4 v 8.3 z M 226.4,0.1 h -19.2 c -2,0 -3.4,1.4 -3.4,3.4 v 89.1 c 0,2 1.4,3.4 3.4,3.4 H 223 c 2,0 3.4,-1.4 3.4,-3.4 V 13.9 h -6.9 v 75.8 h -8.9 v -83 h 15.8 z m 243.8,0 49,68.3 c 1.2,1.6 3.4,1 3.4,-0.6 V 6.6 h 8.9 v 83 h -8.1 L 463.2,4.5 C 460.6,0.7 459.1,0 456.3,0 h -3.8 c -2,0 -3.4,1.4 -3.4,3.4 v 89.1 c 0,2 1.4,3.4 3.4,3.4 h 15.8 c 2,0 3.4,-1.4 3.4,-3.4 v -51 L 464.8,32 v 57.5 h -8.9 V 6.8 l 60,84.9 c 2.6,3.6 4.3,4.5 7.7,4.5 h 11.3 c 2,0 3.4,-1.4 3.4,-3.4 V 3.6 c 0,-2 -1.4,-3.4 -3.4,-3.4 h -15.6 c -2,0 -3.4,1.4 -3.4,3.4 V 53.4 L 479.2,0.1 Z"
+          /></svg
+        >, focusing on Frontend now, but I work on everything! You can find me
+        at
+        <a href="mailto:andres@andrespradomorgaz.com" class="text-highlight"
+          >andres@andrespradomorgaz.com</a
+        >
+        and
+        <a
+          href="https://www.linkedin.com/in/apradomorgaz/"
+          class="text-highlight"
+          >LinkedIn</a
+        >. You can also have a look at
+        <a
+          href="/assets/CV Andres Prado Morgaz EN.pdf"
+          class="text-highlight"
+          download="CV_AndresPradoMorgaz_developer"
+          >my CV</a
+        >.
+      </p>
     </section>
     <section class="projectsSection">
-      <h3>Explora algunos de mis proyectos en vivo</h3>
+      <h3 class="text">Explora algunos de mis proyectos en vivo</h3>
+      <h3 class="text hiddenLanguage">Check some of my live projects</h3>
       <div class="projectsList" id="projectsList">
         <article class="project">
           <!-- Matching Pairs -->
@@ -71,11 +114,13 @@
                 src="./assets/thumbPairs.webp"
                 alt="Matching pairs game thumb"
               />
-              <h3 class="projectTitleSm">Encuentra las parejas</h3>
+              <h3 class="projectTitleSm text">Encuentra las parejas</h3>
+              <h3 class="projectTitleSm text hiddenLanguage">Find the pairs</h3>
             </div>
           </a>
           <div class="project-details">
-            <h3 class="projectTitleMd">Encuentra las parejas</h3>
+            <h3 class="projectTitleMd text">Encuentra las parejas</h3>
+            <h3 class="projectTitleMd text hiddenLanguage">Find the pairs</h3>
             <div class="techList">
               <span class="techItem">
                 <svg
@@ -98,14 +143,23 @@
                 <span>React</span>
               </span>
             </div>
-            Juego de memoria donde las parejas se van descartando y los errores
-            hacen que las cartas levantadas vuelvan a voltearse.
+            <div class="text">
+              Juego de memoria donde las parejas se van descartando y los
+              errores hacen que las cartas levantadas vuelvan a voltearse.
+            </div>
+            <div class="text hiddenLanguage">
+              Memory game where matching pairs stay up and mistakes make last
+              two cards flip back again.
+            </div>
             <div class="project-links">
               <a href="https://andrespradomorgaz.com/matching-pairs"
-                ><i class="bi bi-link-45deg"></i><span>¡Pruébalo!</span></a
+                ><i class="bi bi-link-45deg"></i
+                ><span class="text">¡Pruébalo!</span
+                ><span class="text hiddenLanguage">Try it out!</span></a
               >
               <a href="https://github.com/andpramor/matching-pairs"
-                ><i class="bi bi-code-slash"></i><span>Código</span></a
+                ><i class="bi bi-code-slash"></i><span class="text">Código</span
+                ><span class="text hiddenLanguage">Code</span></a
               >
             </div>
           </div>
@@ -145,14 +199,23 @@
                 <span>React</span>
               </span>
             </div>
-            Lleva un registro de las películas y series de TV que has visto. No
-            vuelvas a perder la cuenta de qué capítulo te toca ahora.
+            <div class="text">
+              Lleva un registro de las películas y series de TV que has visto.
+              No vuelvas a perder la cuenta de qué capítulo te toca ahora.
+            </div>
+            <div class="text hiddenLanguage">
+              Keep a log of every movie and TV show you watch. Never lose track
+              of the next episode to watch!
+            </div>
             <div class="project-links">
               <a href="https://andrespradomorgaz.com/tv-react-tracker"
-                ><i class="bi bi-link-45deg"></i><span>¡Pruébalo!</span></a
+                ><i class="bi bi-link-45deg"></i
+                ><span class="text">¡Pruébalo!</span
+                ><span class="text hiddenLanguage">Try it out!</span></a
               >
               <a href="https://github.com/andpramor/tv-react-tracker"
-                ><i class="bi bi-code-slash"></i><span>Código</span></a
+                ><i class="bi bi-code-slash"></i><span class="text">Código</span
+                ><span class="text hiddenLanguage">Code</span></a
               >
             </div>
           </div>
@@ -168,11 +231,15 @@
                 src="./assets/thumbPokemon.webp"
                 alt="Pokemon react app thumb"
               />
-              <h3 class="projectTitleSm">Pokedex completa</h3>
+              <h3 class="projectTitleSm">
+                Pokedex <span class="text">completa</span>
+              </h3>
             </div>
           </a>
           <div class="project-details">
-            <h3 class="projectTitleMd">Pokedex completa</h3>
+            <h3 class="projectTitleMd">
+              Pokedex <span class="text">completa</span>
+            </h3>
             <div class="techList">
               <span class="techItem">
                 <svg
@@ -195,16 +262,26 @@
                 <span>React</span>
               </span>
             </div>
-            Busca un pokémon y sus estadísticas base por su nombre o su número
-            de pokedex, añade tus favoritos a una lista o forma un equipo con
-            los seis que quieras. Filtrados por tipo y con opción de obtener uno
-            aleatorio.
+            <div class="text">
+              Busca un pokémon y sus estadísticas base por su nombre o su número
+              de pokedex, añade tus favoritos a una lista o forma un equipo con
+              los seis que quieras. Filtrados por tipo y con opción de obtener
+              uno aleatorio.
+            </div>
+            <div class="text hiddenLanguage">
+              Look up a pokémon and its base stats by name or pokedex number,
+              add your favs to a list or build a team with the six you prefer.
+              Filtered by type and with the option to get a random one.
+            </div>
             <div class="project-links">
               <a href="https://andrespradomorgaz.com/pokereactapp"
-                ><i class="bi bi-link-45deg"></i><span>¡Pruébalo!</span></a
+                ><i class="bi bi-link-45deg"></i
+                ><span class="text">¡Pruébalo!</span
+                ><span class="text hiddenLanguage">Try it out!</span></a
               >
               <a href="https://github.com/andpramor/pokereactapp"
-                ><i class="bi bi-code-slash"></i><span>Código</span></a
+                ><i class="bi bi-code-slash"></i><span class="text">Código</span
+                ><span class="text hiddenLanguage">Code</span></a
               >
             </div>
           </div>
@@ -214,11 +291,17 @@
           <div class="img-container-out">
             <div class="img-container-in">
               <img src="./assets/thumbBibliotafo.webp" alt="Bibliotafo thumb" />
-              <h3 class="projectTitleSm">Librería Bibliótafo</h3>
+              <h3 class="projectTitleSm text">Librería Bibliótafo</h3>
+              <h3 class="projectTitleSm text hiddenLanguage">
+                Bibliotafo Library
+              </h3>
             </div>
           </div>
           <div class="project-details">
-            <h3 class="projectTitleMd">Librería Bibliótafo</h3>
+            <h3 class="projectTitleMd text">Librería Bibliótafo</h3>
+            <h3 class="projectTitleMd text hiddenLanguage">
+              Bibliotafo Library
+            </h3>
             <div class="techList">
               <span class="techItem">
                 <svg
@@ -265,13 +348,23 @@
                 <span>MySQL</span>
               </span>
             </div>
-            Bibliótafo es una tienda online con funcionalidades sociales para
-            una librería ficticia, que también sirve para que los trabajadores
-            hagan las ventas que se den en la tienda física. <br />
-            Offline mientras encuentro un hosting barato para el backend.
+            <div class="text">
+              Bibliótafo es una tienda online con funcionalidades sociales para
+              una librería ficticia, que también sirve para que los trabajadores
+              hagan las ventas que se den en la tienda física. <br />
+              Offline mientras encuentro un hosting barato para el backend.
+            </div>
+            <div class="text hiddenLanguage">
+              Bibliotafo is a mockup e-commerce with social features for a
+              library, serving both as an online shop, and as a webapp for the
+              employers of the library to keep track of sales and validate them.
+              <br />
+              Currently offline while I find a cheap hosting for the backend.
+            </div>
             <div class="project-links">
               <a href="https://github.com/andpramor/Bibliotafo"
-                ><i class="bi bi-code-slash"></i><span>Código</span></a
+                ><i class="bi bi-code-slash"></i><span class="text">Código</span
+                ><span class="text hiddenLanguage">Code</span></a
               >
             </div>
           </div>
@@ -284,11 +377,13 @@
           >
             <div class="img-container-in">
               <img src="./assets/thumbTictactoe.webp" alt="Tictactoe thumb" />
-              <h3 class="projectTitleSm">Tres en raya</h3>
+              <h3 class="projectTitleSm text">Tres en raya</h3>
+              <h3 class="projectTitleSm text hiddenLanguage">Tic Tac Toe</h3>
             </div>
           </a>
           <div class="project-details">
-            <h3 class="projectTitleMd">Tres en raya</h3>
+            <h3 class="projectTitleMd text">Tres en raya</h3>
+            <h3 class="projectTitleMd text hiddenLanguage">Tic Tac Toe</h3>
             <div class="techList">
               <span class="techItem">
                 <svg
@@ -311,27 +406,41 @@
                 <span>React</span>
               </span>
             </div>
-            El clásico juego tres en raya, explorando componentes funcionales y
-            los principales hooks de React.
+            <div class="text">
+              El clásico juego tres en raya, explorando componentes funcionales
+              y los principales hooks de React.
+            </div>
+            <div class="text hiddenLanguage">
+              The classic Tic Tac Toe game, exploring functional components and
+              principal React hooks.
+            </div>
             <div class="project-links">
               <a href="https://andrespradomorgaz.com/tic-tac-toe"
-                ><i class="bi bi-link-45deg"></i><span>¡Pruébalo!</span></a
+                ><i class="bi bi-link-45deg"></i
+                ><span class="text">¡Pruébalo!</span
+                ><span class="text hiddenLanguage">Try it out!</span></a
               >
               <a href="https://github.com/andpramor/tic-tac-toe"
-                ><i class="bi bi-code-slash"></i><span>Código</span></a
+                ><i class="bi bi-code-slash"></i><span class="text">Código</span
+                ><span class="text hiddenLanguage">Code</span></a
               >
             </div>
           </div>
         </article>
-        <span class="seeMore text-highlight toggleProjects">Más proyectos</span>
+        <span class="seeMore text-highlight toggleProjects"
+          ><span class="text">Más proyectos</span
+          ><span class="text hiddenLanguage">More projects</span></span
+        >
         <span class="seeMore text-highlight hidden toggleProjects"
-          >Menos proyectos</span
+          ><span class="text">Menos proyectos</span>
+          <span class="text hiddenLanguage">Less projects</span></span
         >
       </div>
     </section>
     <section class="aboutSection">
-      <h3>Sobre mí</h3>
-      <p>
+      <h3 class="text">Sobre mí</h3>
+      <h3 class="text hiddenLanguage">About me</h3>
+      <p class="text">
         En 2024, terminé con
         <span class="text-highlight">Matrícula de Honor</span> el Grado Superior
         en Desarrollo de Aplicaciones Web, en el IES Hermanos Machado. Durante
@@ -339,10 +448,23 @@
         que me llevó a formar parte de su equipo como Desarrollador de
         Aplicaciones, rol que desempeño actualmente.
       </p>
-      <p>
+      <p class="text">
         Mi enfoque principal es el frontend, donde estoy muy cómodo trabajando
         con ReactJS y Angular, y tengo sólidos conocimientos en HTML, CSS,
         Bootstrap, Javascript y Typescript.
+      </p>
+      <p class="text hiddenLanguage">
+        In 2024, I completed my Certificate of Higher Education in Web
+        Development,
+        <span class="text-highlight">graduating with honours</span>, at IES
+        Hermanos Machado. During my internship in Eviden, part of the Atos
+        Group, I gained valuable experience that led me to join their team as an
+        Application Developer, a position I currently hold.
+      </p>
+      <p class="text hiddenLanguage">
+        My primary focus now is on Frontend development, where I'm very
+        confortable with ReactJS and Angular. I consider myself proficent with
+        HTML, CSS, Bootstrap and vanilla Javascript and Typescript too.
       </p>
       <p class="logos">
         <img src="./assets/svg/react.svg" alt="React logo" />
@@ -353,11 +475,17 @@
         <img src="./assets/svg/javascript.svg" alt="Javascript logo" />
         <img src="./assets/svg/typescript.svg" alt="Typescript logo" />
       </p>
-      <p>
+      <p class="text">
         En backend, he utilizado principalmente Python, con el framework web
         Django y DRF para desarrollar mis APIs REST, y también he realizado
         proyectos utilizando Java y Spring Boot. Tengo experiencia con varias
         bases de datos relacionales, en especial MySQL.
+      </p>
+      <p class="text hiddenLanguage">
+        As for the backend, I enjoy Python with Django the most, I have use them
+        with DRF to work on some APIs REST, and I'm also confortable with Java
+        and Spring Boot. I have experience with various relational databases,
+        specially MySQL.
       </p>
       <p class="logos">
         <img src="./assets/svg/python.svg" alt="Python logo" />
@@ -366,12 +494,19 @@
         <img src="./assets/svg/spring-boot.svg" alt="SpringBoot logo" />
         <img src="./assets/svg/mysql.svg" alt="MySQL logo" />
       </p>
-      <p>
+      <p class="text">
         Y en cuanto a despliegues, empleo distintos servicios de Amazon Web
         Services (AWS) como buckets S3 para páginas estáticas y archivos,
         instancias EC2 para proyectos Django que necesitan ejecutar código y
         bases de datos RDS, además de GitHub Pages para proyectos estáticos
         cuando el proyecto no necesita otros servicios de AWS.
+      </p>
+      <p class="text hiddenLanguage">
+        Lastly, for deployments, I use different Amazon Web Services (AWS)
+        offerings, such as S3 buckets for files and static sites, EC2 instances
+        for Django projects that need to run code and RDS databases. I also use
+        GitHub Pages for static sites for projects that don't need other AWS
+        services.
       </p>
       <p class="logos">
         <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
@@ -404,7 +539,8 @@
     <footer>
       <span class="footerLinks">
         <a href="mailto:andres@andrespradomorgaz.com"
-          ><i class="bi bi-envelope-fill"></i>Contacto</a
+          ><i class="bi bi-envelope-fill"></i><span class="text">Contacto</span
+          ><span class="text hiddenLanguage">Contact</span></a
         >
         <a href="https://www.linkedin.com/in/apradomorgaz/"
           ><i class="bi bi-linkedin"></i>LinkedIn</a
@@ -415,6 +551,9 @@
       </span>
       <span>2024 &#169; Andrés Prado Morgaz</span>
     </footer>
-    <script src="./script.js"></script>
+    <script src="./toggleColorMode.js"></script>
+    <script src="./languageHandler.js"></script>
+    <script src="./onScrollMenuHandler.js"></script>
+    <script src="./toggleProjects.js"></script>
   </body>
 </html>
