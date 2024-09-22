@@ -21,7 +21,7 @@ function loadLanguage() {
 
     if (savedLanguage) {
         language = savedLanguage
-    } else if (userDefaultLanguage === 'es') {
+    } else if (userDefaultLanguage === 'es-ES') {
         language = 'es'
     } else {
         language = 'en'
