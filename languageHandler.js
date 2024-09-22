@@ -3,7 +3,6 @@ const texts = document.querySelectorAll('.text')
 const toggleTextsShown = () => texts.forEach(element => element.classList.toggle('hiddenLanguage'))
 
 const handleLanguageToggle = () => {
-    console.log('Hi')
     // Check the current language, set the new language to be the other option and store it in localStorage:
     const currentLanguage = document.documentElement.getAttribute('lang')
     const newLanguage = currentLanguage === 'es' ? 'en' : 'es'
@@ -17,9 +16,6 @@ const handleLanguageToggle = () => {
 function loadLanguage() {
     const savedLanguage = localStorage.getItem('lang')
     const userDefaultLanguage = navigator.language || navigator.userLanguage
-    console.log('savedLanguage', savedLanguage)
-    console.log('userDefaultLanguage', userDefaultLanguage)
-    console.log('userDefaultLanguage === "es-ES"', userDefaultLanguage === 'es-ES')
     let language
 
     if (savedLanguage) {
