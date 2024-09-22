@@ -17,6 +17,7 @@ const handleLanguageToggle = () => {
 function loadLanguage() {
     const savedLanguage = localStorage.getItem('lang')
     const userDefaultLanguage = navigator.language || navigator.userLanguage
+    console.log(userDefaultLanguage)
     let language
 
     if (savedLanguage) {
