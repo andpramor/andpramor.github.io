@@ -17,24 +17,24 @@ const handleLightToggler = () => {
 
 // Check the user's color mode preference on page load:
 function loadTheme() {
-    const savedTheme = localStorage.getItem("theme");
-    let theme;
+    const savedTheme = localStorage.getItem('theme')
+    let theme
 
     if (savedTheme) {
-        theme = savedTheme;
+        theme = savedTheme
     } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        theme = "dark";
+        theme = 'dark'
     } else {
-        theme = "light";
+        theme = 'light'
     }
-    document.documentElement.setAttribute("color-mode", theme);
+    document.documentElement.setAttribute('color-mode', theme)
 
-    if (theme === "dark") {
-        lightToggler.classList.remove('bi-moon-fill');
-        lightToggler.classList.add('bi-brightness-high-fill');
+    if (theme === 'dark') {
+        lightToggler.classList.remove('bi-moon-fill')
+        lightToggler.classList.add('bi-brightness-high-fill')
     } else {
-        lightToggler.classList.remove('bi-brightness-high-fill');
-        lightToggler.classList.add('bi-moon-fill');
+        lightToggler.classList.remove('bi-brightness-high-fill')
+        lightToggler.classList.add('bi-moon-fill')
     }
 }
 
@@ -55,7 +55,7 @@ let lastScrollTop = 0;
 const optionsMenu = document.getElementById('optionsMenu');
 
 window.addEventListener('scroll', function () {
-    let scrollTop = document.documentElement.scrollTop;
+    let scrollTop = document.documentElement.scrollTop
 
     if (scrollTop > 0) {
         optionsMenu.classList.add('bg-blur')
@@ -71,4 +71,8 @@ window.addEventListener('scroll', function () {
         optionsMenu.style.top = '1rem'
     }
     lastScrollTop = scrollTop;
-});
+})
+
+// TODO: change language funtionality
+// TODO: change html lang attribute to the selected language too, like this:
+// ? document.documentElement.setAttribute('lang','en')

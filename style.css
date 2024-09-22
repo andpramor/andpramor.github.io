@@ -426,3 +426,7 @@ footer {
     width: 50%;
   }
 }
+
+.hiddenLanguage {
+  display: none;
+}
