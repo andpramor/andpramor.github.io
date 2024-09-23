@@ -20,7 +20,7 @@ function loadLanguage() {
 
     if (savedLanguage) {
         language = savedLanguage
-    } else if (userDefaultLanguage === 'es-ES') {
+    } else if (userDefaultLanguage === 'es-ES' || userDefaultLanguage === 'es') {
         language = 'es'
     } else {
         language = 'en'
