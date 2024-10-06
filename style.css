@@ -1,8 +1,8 @@
-@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 /* Bootstrap icons CDN */
 
 :root {
-  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
   font-size: 17px;
   margin: 0;
@@ -20,7 +20,7 @@
 }
 
 /* Dark mode */
-[color-mode='dark'] {
+[color-mode="dark"] {
   --body-bg: var(--deep-blue);
   --body-color: white;
   --gray: rgb(209, 213, 219);
@@ -150,18 +150,26 @@ body {
 
 .bg-grad {
   background-color: hsla(219.99999999999997, 4%, 13%, 1);
-  background-image: radial-gradient(circle at 26% -2%,
+  background-image: radial-gradient(
+      circle at 26% -2%,
       hsla(180.0000000000013, 74%, 35%, 0.17) 34.46019567213906%,
-      transparent 111.52108844697476%),
-    radial-gradient(circle at 33% 22%,
+      transparent 111.52108844697476%
+    ),
+    radial-gradient(
+      circle at 33% 22%,
       hsla(227.6470588235294, 0%, 6%, 1) 193.2645292720332%,
-      transparent 211.04195225484372%),
-    radial-gradient(circle at 26% 2%,
+      transparent 211.04195225484372%
+    ),
+    radial-gradient(
+      circle at 26% 2%,
       hsla(240, 6%, 93%, 1) 19.797173843284874%,
-      transparent 76.52673213557512%),
-    radial-gradient(circle at 1% 1122%,
+      transparent 76.52673213557512%
+    ),
+    radial-gradient(
+      circle at 1% 1122%,
       hsla(231.42857142857144, 5%, 23%, 1) 0%,
-      transparent 150%);
+      transparent 150%
+    );
   background-blend-mode: normal, normal, normal, normal;
 }
 
@@ -173,11 +181,12 @@ section {
   padding: 1rem;
 }
 
-.sectionIntro {
+#sectionIntro {
   margin-top: 1rem;
+  animation: fadeInTop 1s ease 0s 1 normal forwards;
 }
 
-.sectionIntro,
+#sectionIntro,
 .intro {
   display: flex;
   flex-direction: column;
@@ -193,6 +202,30 @@ section {
 
 .intro div {
   text-align: center;
+}
+
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .projectsList {
@@ -213,7 +246,7 @@ section {
   color: var(--highlight-contrast);
 }
 
-.projectsList>.seeMore {
+.projectsList > .seeMore {
   align-self: flex-start;
 }
 
@@ -374,7 +407,7 @@ footer {
     width: 80%;
   }
 
-  .sectionIntro {
+  #sectionIntro {
     align-items: start;
   }
 
