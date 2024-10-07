@@ -181,7 +181,8 @@ section {
   padding: 1rem;
 }
 
-#sectionIntro {
+#sectionIntro,
+#projectsSection {
   margin-top: 1rem;
   animation: fadeInTop 1s ease 0s 1 normal forwards;
 }
