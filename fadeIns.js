@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
       })
     },
     {
-      threshold: 0.3 // % element visibility before the observer callback triggers
+      threshold: 0.1 // % element visibility before the observer callback triggers
     }
   )
 
