@@ -5,7 +5,7 @@ let match = path.match(/^\/([^\/]+)\/([^\/]+)\/?/)
 
 if (match) {
   let projectName = match[1] // "proyecto1", "proyecto2", etc.
-  window.location.replace('https://andrespradomorgaz.com/' + projectName + '/')
+  window.location.replace('https://andrespradomorgaz.com/' + projectName)
 } else {
   let countdown = 5
   const timer = document.getElementById('countdownTimer')
