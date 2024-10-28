@@ -19,6 +19,11 @@
   --highlight-contrast: black;
 }
 
+html,
+body {
+  overscroll-behavior: none;
+}
+
 /* Dark mode */
 [color-mode='dark'] {
   --body-bg: var(--deep-blue);
