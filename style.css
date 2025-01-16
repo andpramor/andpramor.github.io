@@ -106,16 +106,18 @@ body {
   box-shadow: 2px 2px 8px var(--shadow-color);
 }
 
-#optionsMenu i {
-  font-size: 1.2rem;
+#optionsMenu svg {
+  height: 1.1rem;
 }
 
-#optionsMenu span {
+#optionsMenu > span {
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
 }
 
 #optionsMenu span * {
-  text-decoration: none;
   opacity: 0.8;
   color: inherit;
   transition: opacity 0.3s, color 0.3s;
@@ -367,18 +369,19 @@ code {
   border-radius: 500px;
   padding: 0.2rem 0.5rem;
   transition: border 0.3s;
-
-  i {
-    transition: color 0.3s;
-  }
 }
 
 .project-links a:hover {
   border: 1px solid var(--highlight-color);
+}
 
-  i {
-    color: var(--highlight-color);
-  }
+.project-links a svg {
+  width: 1rem;
+  transition: color 0.3s;
+}
+
+.project-links a:hover svg {
+  color: var(--highlight-color);
 }
 
 .logos {
@@ -423,6 +426,10 @@ footer {
   a:hover {
     color: var(--highlight-color);
   }
+}
+
+.footerLinks svg {
+  width: 1rem;
 }
 
 @media screen and (min-width: 768px) {
